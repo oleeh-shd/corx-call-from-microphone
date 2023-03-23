@@ -1,0 +1,52 @@
+
+.inputWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.inputIcon {
+    position: absolute;
+    right: 18px;
+    top: 13px
+}
+
+.inputIconStatus {
+    position: absolute;
+    right: 18px;
+    top: 13px;
+    z-index: 1;
+}
+
+.input {
+    height: 50px;
+    padding: 0 16px;
+    background: #ffffff;
+    color: #29323d;
+    border: 1px solid #D4D6DE;
+    outline: none;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+
+    &.error {
+        background: rgba(187, 23, 23, 0.05);
+        border: 1px solid #BB1717;
+    }
+
+    &.access {
+        background: rgba(36, 187, 23, 0.05);
+        border: 1px solid #24BB17;
+    }
+
+    &::placeholder {
+        color: #ced3dd;
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}

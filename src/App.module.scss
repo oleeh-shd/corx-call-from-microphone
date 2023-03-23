@@ -1,0 +1,45 @@
+.mainWrapper {
+    padding-top: 231px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .mainInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  
+  .buttonVoiceWrapper {
+    display: flex;
+    width: 240px;
+    padding: 0 10px;
+    margin: 0 auto 20px auto;
+  
+    div {
+      background: linear-gradient(0deg, #6fc493 -3.22%, #47bea7 124.46%);
+      border-radius: 20px;
+      height: 50px;
+    }
+  }
+  
+  .animated {
+    animation: ease pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
